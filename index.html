@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MapDesigner</title>
+        <style>
+            body{
+                background: #b3987d;
+                font-family: cambria;
+                font-weight: bold;
+            }
+            h1{
+                font-size: 6em;
+                text-align: center;
+                color: #174d32;
+                text-shadow: -.04em -.04em white, .04em .04em black;
+                margin: .3em 0;
+            }
+            h3{
+                font-size: 4em;
+                text-align: center;
+                color: #268053;
+                margin: 0;
+            }
+            hr{
+                width: 5%;
+                background: #268053;
+                height: .5em;
+                border: none;
+                margin: 1.5em auto;
+                border-radius: 1em;
+            }
+            #entercodediv{
+                margin: 0 auto;
+                width: 40%;
+                padding: 1em;
+                background: #c6b39f;
+                border-radius: 1em;
+            }
+            #codeinput{
+                border: none;
+                background: #e2d9cf;
+                width: 84%;
+                margin: 0 5%;
+                font-family: cambria;
+                font-weight: bold;
+                font-size: 2em;
+                color: #b3987d;
+                border-radius: 1em;
+                padding: 0 3%;
+                text-align: center;
+            }
+            #codeinput:focus{
+                color: #80684d;
+                outline: #80684d solid .1em;
+            }
+            button{
+                font-family: cambria;
+                font-weight: bold;
+                font-size: 3em;
+                border: none;
+                border-radius: 1em;
+                margin: .3em;
+                padding: 0 .3em;
+                color: #e6a15c;
+                background: #e6c4a1;
+                border: solid 4px #e6a15c;
+            }
+            button:hover{
+                color: #e6c4a1;
+                background: #cc8f52;
+                border: solid 4px #e6c4a1;
+            }
+            #guidebutton{
+                color: #e65c5c;
+                background: #ffb3b3;
+                border: solid 4px #e65c5c;
+            }
+            #guidebutton:hover{
+                color: #ffb3b3;
+                background: #cc5252;
+                border: solid 4px #ffb3b3;
+            }
+            #newmapbutton{
+                float: left;
+            }
+            #loadmapbuttondiv{
+                width: min-content;
+                margin: auto;
+            }
+            #twobuttonsdiv{
+                width: max-content;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>MapDesigner</h1>
+            <hr>
+            <div id="entercodediv">
+                <h3>Code:</h3>
+                <input type="text" id="codeinput">
+                <div id="loadmapbuttondiv">
+                    <button id="loadmapbutton">Load_Map</button>
+                </div>
+            </div>
+            <hr>
+            <div id="twobuttonsdiv">
+                <button id="newmapbutton">New_Map</button>
+                <button id="guidebutton">Guide</button>
+            </div>
+        </div>
+    </body>
+</html>
