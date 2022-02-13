@@ -15,6 +15,10 @@
                 text-shadow: -.04em -.04em white, .04em .04em black;
                 margin: .3em 0;
             }
+            h1 em{
+                color: #9d2f2f;
+                font-style: normal;
+            }
             h3{
                 font-size: 4em;
                 text-align: center;
@@ -63,22 +67,35 @@
                 padding: 0 .3em;
                 color: #e6a15c;
                 background: #e6c4a1;
-                border: solid 4px #e6a15c;
+                border: solid 5px #e6a15c;
             }
             button:hover{
                 color: #e6c4a1;
                 background: #cc8f52;
-                border: solid 4px #e6c4a1;
+                border: solid 5px #e6c4a1;
             }
             #guidebutton{
                 color: #e65c5c;
                 background: #ffb3b3;
-                border: solid 4px #e65c5c;
+                border: solid 5px #e65c5c;
             }
             #guidebutton:hover{
                 color: #ffb3b3;
                 background: #cc5252;
-                border: solid 4px #ffb3b3;
+                border: solid 5px #ffb3b3;
+            }
+            #guidebackbutton{
+                font-size: 1.5em;
+                color: #174d32;
+                background: #36b374;
+                border: solid 3px #174d32;
+                position: absolute;
+            }
+            #guidebackbutton:hover{
+                color: #36b374;
+                background: black;
+                border: solid 3px #36b374;
+
             }
             #newmapbutton{
                 float: left;
@@ -94,7 +111,7 @@
         </style>
     </head>
     <body>
-        <div id="container">
+        <div id="entercodepage">
             <h1>MapDesigner</h1>
             <hr>
             <div id="entercodediv">
@@ -110,5 +127,13 @@
                 <button id="guidebutton">Guide</button>
             </div>
         </div>
+        <div id="mappage">
+
+        </div>
+        <div id="guidepage">
+            <button id="guidebackbutton"><--back</button>
+            <h1><em>MapDes.</em> Guide</h1>
+        </div>
+        <script src="code.js"></script>
     </body>
 </html>
